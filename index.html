@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bachira — მთავარი</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <nav class="navbar container" aria-label="მთავარი მენიუ">
+        <a href="index.html" class="brand" aria-label="Bachira-ს მთავარი გვერდი"><span class="brand-accent">Ba</span>chira</a>
+        <div class="nav-links">
+          <a href="index.html" aria-current="page">მთავარი</a>
+          <a href="#products">პროდუქტები</a>
+          <a href="#categories">კატეგორიები</a>
+          <a href="#why-us">რატომ ჩვენ?</a>
+        </div>
+        <div class="nav-actions">
+          <details class="order-details">
+            <summary class="cart-button">შეკვეთის გაფორმება</summary>
+            <form class="order-form" action="mailto:support@bachira.com" method="post" enctype="text/plain">
+              <label for="order-phone">გთხოვთ, მიუთითოთ თქვენი ტელეფონის ნომერი</label>
+              <input id="order-phone" name="ტელეფონის ნომერი" type="tel" placeholder="თქვენი ტელეფონის ნომერი" pattern="[0-9+() -]{7,20}" required />
+              <button class="primary-btn" type="submit">გაგრძელება</button>
+            </form>
+          </details>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-copy">
+          <h1>საუკეთესო ადგილი<br />შოპინგისთვის</h1>
+          <p class="hero-text">
+            Bachira-ში ერთ სივრცეში დაგხვდებათ საყვარელი ტანსაცმელი, ფეხსაცმელი,
+            თავის მოვლის საშუალებები, ტექნიკა და ბევრი სხვა პროდუქტი.
+          </p>
+          <div class="cta-row">
+            <a href="#products" class="primary-btn">შეიძინე ახლავე</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <a href="#products" class="hero-image-link image-button" aria-label="პროდუქტების ნახვა">
+            <img src="hero_image.png" alt="მომხმარებელი საყიდლების ჩანთებით" />
+          </a>
+        </div>
+      </section>
+
+      <section id="categories" class="collaboration-section container" aria-label="ჩვენი პარტნიორები">
+        <h2>250-ზე მეტ წამყვან ბრენდთან<br />ერთად ვქმნით შოპინგის გამოცდილებას</h2>
+        <a class="text-link" href="#products">დაათვალიერე კატეგორიები</a>
+      </section>
+
+      <section id="products" class="container products-section" aria-labelledby="products-title">
+        <h1 id="products-title">პოპულარული პროდუქტები</h1>
+        <div class="shop-grid">
+          <article class="product-card">
+            <a class="product-photo-button shoe-photo" href="mailto:support@bachira.com?subject=სპორტული%20ფეხსაცმელი" aria-label="სპორტული ფეხსაცმლის შეკვეთა"></a>
+            <h2>სპორტული ფეხსაცმელი</h2><p>299 ₾</p>
+            <a class="primary-btn add-button" href="mailto:support@bachira.com?subject=სპორტული%20ფეხსაცმელი">შეკვეთა</a>
+          </article>
+          <article class="product-card">
+            <a class="product-photo-button hoodie-photo" href="mailto:support@bachira.com?subject=თეთრი%20ჰუდი" aria-label="თეთრი ჰუდის შეკვეთა"></a>
+            <h2>თეთრი ჰუდი</h2><p>89 ₾</p>
+            <a class="primary-btn add-button" href="mailto:support@bachira.com?subject=თეთრი%20ჰუდი">შეკვეთა</a>
+          </article>
+          <article class="product-card">
+            <a class="product-photo-button watch-photo" href="mailto:support@bachira.com?subject=ჭკვიანი%20საათი" aria-label="ჭკვიანი საათის შეკვეთა"></a>
+            <h2>ჭკვიანი საათი</h2><p>179 ₾</p>
+            <a class="primary-btn add-button" href="mailto:support@bachira.com?subject=ჭკვიანი%20საათი">შეკვეთა</a>
+          </article>
+          <article class="product-card">
+            <a class="product-photo-button earbuds-photo" href="mailto:support@bachira.com?subject=უსადენო%20ყურსასმენები" aria-label="ყურსასმენების შეკვეთა"></a>
+            <h2>უსადენო ყურსასმენები</h2><p>129 ₾</p>
+            <a class="primary-btn add-button" href="mailto:support@bachira.com?subject=უსადენო%20ყურსასმენები">შეკვეთა</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="why-us" class="container why-section" aria-labelledby="why-title">
+        <h1 id="why-title">რატომ Bachira?</h1>
+        <div class="why-grid">
+          <article class="why-card"><span class="why-icon">01</span><h2>უფასო მიწოდება</h2><p>შეკვეთას სწრაფად და უფასოდ მოგიტანთ.</p></article>
+          <article class="why-card"><span class="why-icon">02</span><h2>სანდო მაღაზია</h2><p>შეარჩიე ხარისხიანი პროდუქტი ერთ სივრცეში.</p></article>
+          <article class="why-card"><span class="why-icon">03</span><h2>ჩვენ შენ გვერდით ვართ</h2><p>კითხვების შემთხვევაში მოგვწერე ნებისმიერ დროს.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid container">
+        <section class="footer-about" aria-label="Bachira-ს შესახებ">
+          <a href="index.html" class="brand"><span class="brand-accent">Ba</span>chira</a>
+          <p>Bachira ონლაინ მაღაზიაა, სადაც ხარისხიან პროდუქტებს მარტივად და ხელსაყრელ ფასად შეიძენთ.</p>
+        </section>
+        <section class="footer-links" aria-label="Bachira-ს გვერდები">
+          <h2>აღმოაჩინე</h2>
+          <a href="#products">პროდუქტები</a>
+          <a href="#categories">კატეგორიები</a>
+          <a href="#why-us">რატომ ჩვენ?</a>
+        </section>
+        <section class="footer-links footer-contact" aria-label="კონტაქტი">
+          <h2>კონტაქტი</h2>
+          <a href="mailto:support@bachira.com">support@bachira.com</a>
+          <a href="tel:021555456">021 - 555 -456</a>
+          <p>თბილისი, საქართველო</p>
+        </section>
+      </div>
+      <p class="copyright container">© 2026 Bachira. ყველა უფლება დაცულია.</p>
+    </footer>
+  </div>
+</body>
+</html>
